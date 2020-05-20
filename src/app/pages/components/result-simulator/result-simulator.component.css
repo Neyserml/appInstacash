@@ -1,0 +1,16 @@
+.card-content {
+  text-align: center;
+}
+.monthly-amount {
+  font-weight: bold;
+  font-size: 25px;
+}
+.dashed {
+  border-right: dashed rgba(120, 113, 113, 0.87);
+}
+.detail {
+  margin-top: 15px;
+}
+.bold {
+  font-weight: bold;
+}

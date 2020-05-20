@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-content">
+    <span class="card-title-month">Tu cuota mensual será:</span><br />
+    <span class="monthly-amount">
+      {{ _currencyFormat(monthlyAmount?.monthly_amount) }}</span
+    >
+    <div class="row detail">
+      <div class="col s4 dashed">
+        <span>Cuotas</span><br />
+        <span class="bold">{{ campaign?.max_quota }}</span>
+      </div>
+      <div class="col s4 dashed">
+        <span>TEA</span><br />
+        <span class="bold">{{ _currencyFormat(campaign?.tea) }}%</span>
+      </div>
+      <div class="col s4">
+        <span>Pago 1ª cuota</span><br />
+        <span class="bold">{{ campaign?.payment_date }}</span>
+      </div>
+    </div>
+  </div>
+</div>

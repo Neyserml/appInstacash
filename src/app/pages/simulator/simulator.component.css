@@ -1,0 +1,157 @@
+.title {
+  padding: 20px 0;
+  overflow: visible;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+.amount-input {
+  padding-left: 20px !important;
+}
+.currency-symbol {
+  position: absolute;
+  bottom: 41px;
+  left: 10px;
+  font-size: 17px;
+}
+.title::after {
+  content: "";
+  width: 35px;
+  height: 3px;
+  border-radius: 2px;
+  display: block;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.card-simulation {
+  margin-top: 50px;
+}
+.card-tit {
+  font-size: 20px;
+  font-weight: bold;
+}
+.gion {
+  color: red;
+  height: 10px;
+}
+.maxquotarange {
+  text-align: right;
+}
+.mount {
+  font-weight: bold;
+}
+.slide {
+  background-color: red;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #0552aa;
+}
+.helper-text-ncuotas {
+  color: #8230df;
+  font-weight: bold;
+}
+#text-error {
+  color: red;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #8230df;
+  border-radius: 8px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #8230df;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #8230df;
+  border-radius: 8px;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #8230df;
+  border-radius: 8px;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #8230df;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #8230df;
+  border-radius: 8px;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #8230df;
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}

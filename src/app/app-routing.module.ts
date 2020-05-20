@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-
-const routes: Routes = [];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+import { RouterModule, Routes } from "@angular/router";
+import { NopagefoundComponent } from "./shared/nopagefound/nopagefound.component";
+import { PagesComponent } from "./pages/pages.component";
+// Route Components //
+const appRoutes: Routes = [
+  {
+    path: "",
+    component: PagesComponent,
+  },
+  { path: "**", component: NopagefoundComponent },
+];
+export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: false });
